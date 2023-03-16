@@ -18,6 +18,11 @@ class LoginPage extends StatelessWidget {
                 bottomRight: Radius.circular(150),
               ),
             ),
+            child: const ClipRRect(
+              borderRadius: BorderRadius.only(
+                bottomRight: Radius.circular(150),
+              ),
+            ),
           ),
         ],
       )),
