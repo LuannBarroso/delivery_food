@@ -18,9 +18,13 @@ class LoginPage extends StatelessWidget {
                 bottomRight: Radius.circular(150),
               ),
             ),
-            child: const ClipRRect(
-              borderRadius: BorderRadius.only(
+            child: ClipRRect(
+              borderRadius: const BorderRadius.only(
                 bottomRight: Radius.circular(150),
+              ),
+              child: Image.asset(
+                'assets/images/cha.jpg',
+                fit: BoxFit.cover, // para ajustar a imagem ao container
               ),
             ),
           ),
