@@ -38,7 +38,7 @@ class LoginPage extends StatelessWidget {
                 ],
               ),
               Row(
-                mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   ElevatedButton(
                     onPressed: () {},
