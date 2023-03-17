@@ -42,12 +42,12 @@ class LoginPage extends StatelessWidget {
                 children: [
                   ElevatedButton(
                     onPressed: () {},
-                    child: const Text('Botão 1'),
+                    child: const Text('Sign In'),
                   ),
                   const SizedBox(width: 16),
                   ElevatedButton(
                     onPressed: () {},
-                    child: const Text('Botão 2'),
+                    child: const Text('Sign Up'),
                   ),
                 ],
               ),
