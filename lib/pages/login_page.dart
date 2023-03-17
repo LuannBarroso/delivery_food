@@ -7,29 +7,50 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
+        child: Align(
+          alignment: AlignmentDirectional.topStart,
           child: Column(
-        children: [
-          Container(
-            height: 190,
-            width: 200,
-            decoration: const BoxDecoration(
-              color: Colors.red,
-              borderRadius: BorderRadius.only(
-                bottomRight: Radius.circular(150),
+            children: [
+              Row(
+                children: [
+                  Flexible(
+                    child: Container(
+                      height: 200,
+                      width: 200,
+                      decoration: const BoxDecoration(
+                        color: Colors.red,
+                        borderRadius: BorderRadius.only(
+                          bottomRight: Radius.circular(150),
+                        ),
+                      ),
+                      child: ClipRRect(
+                        borderRadius: const BorderRadius.only(
+                          bottomRight: Radius.circular(150),
+                        ),
+                        child: Image.asset(
+                          'assets/images/cha.jpg',
+                          fit: BoxFit
+                              .cover, // para ajustar a imagem ao container
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
               ),
-            ),
-            child: ClipRRect(
-              borderRadius: const BorderRadius.only(
-                bottomRight: Radius.circular(150),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  ElevatedButton(
+                    onPressed: () {},
+                    child: const Text('Botão 1'),
+                  ),
+                  const SizedBox(width: 16),
+                ],
               ),
-              child: Image.asset(
-                'assets/images/cha.jpg',
-                fit: BoxFit.cover, // para ajustar a imagem ao container
-              ),
-            ),
+            ],
           ),
-        ],
-      )),
+        ),
+      ),
     );
   }
 }
