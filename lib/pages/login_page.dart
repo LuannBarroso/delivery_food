@@ -20,7 +20,7 @@ class LoginPage extends StatelessWidget {
                       decoration: const BoxDecoration(
                         color: Colors.red,
                         borderRadius: BorderRadius.only(
-                          bottomRight: Radius.circular(150),
+                          bottomRight: Radius.circular(200),
                         ),
                       ),
                       child: ClipRRect(
