@@ -52,7 +52,7 @@ class LoginPage extends StatelessWidget {
                     child: const Text(
                       'Sign In',
                       style: TextStyle(
-                        fontSize: 20,
+                        fontSize: 24,
                         fontWeight: FontWeight.bold,
                         color: Color.fromRGBO(228, 137, 0, 1),
                       ),
@@ -65,7 +65,14 @@ class LoginPage extends StatelessWidget {
                       backgroundColor: Colors
                           .white, // Definindo a cor de fundo do botão como branca
                     ),
-                    child: const Text('Sign Up'),
+                    child: const Text(
+                      'Sign Up',
+                      style: TextStyle(
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                        color: Color.fromRGBO(228, 137, 0, 1),
+                      ),
+                    ),
                   ),
                 ],
               ),
