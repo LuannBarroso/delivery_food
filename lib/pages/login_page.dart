@@ -79,11 +79,12 @@ class LoginPage extends StatelessWidget {
               const SizedBox(
                 height: 10.0,
               ),
+              const Text('E-mail address'),
               Container(
                 height: 41,
                 width: 310,
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
+                  borderRadius: BorderRadius.circular(15),
                   border: Border.all(
                     width: 2,
                     color: Colors.grey,
@@ -91,7 +92,7 @@ class LoginPage extends StatelessWidget {
                 ),
                 child: const TextField(
                   decoration: InputDecoration(
-                    labelText: 'E-mail address',
+                    focusedBorder: InputBorder.none,
                   ),
                 ),
               ),
