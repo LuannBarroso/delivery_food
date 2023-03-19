@@ -79,6 +79,22 @@ class LoginPage extends StatelessWidget {
               const SizedBox(
                 height: 10.0,
               ),
+              Container(
+                height: 41,
+                width: 310,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  border: Border.all(
+                    width: 2,
+                    color: Colors.grey,
+                  ),
+                ),
+                child: const TextField(
+                  decoration: InputDecoration(
+                    labelText: 'E-mail address',
+                  ),
+                ),
+              ),
             ],
           ),
         ),
