@@ -79,7 +79,15 @@ class LoginPage extends StatelessWidget {
               const SizedBox(
                 height: 10.0,
               ),
-              const Text('E-mail address'),
+              const Text(
+                'E-mail address',
+                style: TextStyle(
+                  fontSize: 16,
+                ),
+              ),
+              const SizedBox(
+                height: 10,
+              ),
               Container(
                 height: 41,
                 width: 310,
