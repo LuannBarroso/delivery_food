@@ -104,6 +104,34 @@ class LoginPage extends StatelessWidget {
                   ),
                 ),
               ),
+              const SizedBox(
+                height: 10,
+              ),
+              const Text(
+                'Enter Password',
+                style: TextStyle(
+                  fontSize: 16,
+                ),
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              Container(
+                height: 41,
+                width: 310,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(15),
+                  border: Border.all(
+                    width: 2,
+                    color: Colors.grey,
+                  ),
+                ),
+                child: const TextField(
+                  decoration: InputDecoration(
+                    focusedBorder: InputBorder.none,
+                  ),
+                ),
+              ),
             ],
           ),
         ),
