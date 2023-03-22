@@ -121,11 +121,16 @@ class LoginPage extends StatelessWidget {
                       height: 44,
                       width: double.infinity,
                       decoration: BoxDecoration(
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey.withOpacity(0.5),
+                            offset: const Offset(0, 3),
+                            blurRadius: 5,
+                            spreadRadius: 0,
+                          )
+                        ],
+                        color: Colors.white,
                         borderRadius: BorderRadius.circular(15),
-                        border: Border.all(
-                          width: 2,
-                          color: Colors.grey,
-                        ),
                       ),
                       child: const Padding(
                         padding: EdgeInsets.symmetric(horizontal: 8),
