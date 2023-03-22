@@ -108,7 +108,7 @@ class LoginPage extends StatelessWidget {
                 height: 10,
               ),
               const Text(
-                'Enter Password',
+                'Password',
                 style: TextStyle(
                   fontSize: 16,
                 ),
