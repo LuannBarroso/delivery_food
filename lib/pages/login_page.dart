@@ -6,7 +6,6 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.lightBlue[50],
       body: SafeArea(
         child: Align(
           alignment: AlignmentDirectional.topStart,
@@ -93,6 +92,14 @@ class LoginPage extends StatelessWidget {
                 height: 41,
                 width: 310,
                 decoration: BoxDecoration(
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey.withOpacity(0.5),
+                      offset: const Offset(0, 3),
+                      blurRadius: 5,
+                      spreadRadius: 0,
+                    )
+                  ],
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(15),
                 ),
