@@ -37,9 +37,7 @@ class LoginPage extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(
-                height: 10.0,
-              ),
+              const SizedBox(height: 10.0),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
@@ -76,67 +74,71 @@ class LoginPage extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(
-                height: 10.0,
-              ),
-              const Text(
-                'E-mail address',
-                style: TextStyle(
-                  fontSize: 16,
-                ),
-              ),
-              const SizedBox(
-                height: 10,
-              ),
-              Container(
-                height: 41,
-                width: 310,
-                decoration: BoxDecoration(
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.grey.withOpacity(0.5),
-                      offset: const Offset(0, 3),
-                      blurRadius: 5,
-                      spreadRadius: 0,
-                    )
+              const SizedBox(height: 10.0),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 24),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const Text(
+                      'E-mail',
+                      style:
+                          TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
+                    ),
+                    const SizedBox(height: 10),
+                    Container(
+                      height: 44,
+                      width: double.infinity,
+                      decoration: BoxDecoration(
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey.withOpacity(0.5),
+                            offset: const Offset(0, 3),
+                            blurRadius: 5,
+                            spreadRadius: 0,
+                          )
+                        ],
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(15),
+                      ),
+                      child: const Padding(
+                        padding: EdgeInsets.symmetric(horizontal: 8),
+                        child: TextField(
+                          decoration: InputDecoration(
+                            focusedBorder: InputBorder.none,
+                          ),
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 16),
+                    const Text(
+                      'Password',
+                      style:
+                          TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
+                    ),
+                    const SizedBox(height: 10),
+                    Container(
+                      height: 44,
+                      width: double.infinity,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(15),
+                        border: Border.all(
+                          width: 2,
+                          color: Colors.grey,
+                        ),
+                      ),
+                      child: const Padding(
+                        padding: EdgeInsets.symmetric(horizontal: 8),
+                        child: TextField(
+                          decoration: InputDecoration(
+                            focusedBorder: InputBorder.none,
+                          ),
+                        ),
+                      ),
+                    ),
                   ],
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(15),
                 ),
-                child: const TextField(
-                  decoration: InputDecoration(
-                    focusedBorder: InputBorder.none,
-                  ),
-                ),
-              ),
-              const SizedBox(
-                height: 10,
-              ),
-              const Text(
-                'Password',
-                style: TextStyle(
-                  fontSize: 16,
-                ),
-              ),
-              const SizedBox(
-                height: 10,
-              ),
-              Container(
-                height: 41,
-                width: 310,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(15),
-                  border: Border.all(
-                    width: 2,
-                    color: Colors.grey,
-                  ),
-                ),
-                child: const TextField(
-                  decoration: InputDecoration(
-                    focusedBorder: InputBorder.none,
-                  ),
-                ),
-              ),
+              )
             ],
           ),
         ),
