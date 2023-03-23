@@ -45,10 +45,8 @@ class LoginPage extends StatelessWidget {
                     onPressed: () {},
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.white70,
-                      shape: RoundedRectangleBorder(
-                        side: BorderSide.none, // Removendo a borda do botão
-                        borderRadius: BorderRadius.circular(
-                            15), // Adicionando bordas arredondadas
+                      shape: const RoundedRectangleBorder(
+                        side: BorderSide.none,
                       ),
                     ),
                     child: const Text(
