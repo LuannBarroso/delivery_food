@@ -93,9 +93,9 @@ class LoginPage extends StatelessWidget {
                         boxShadow: [
                           BoxShadow(
                             color: Colors.grey.withOpacity(0.5),
-                            offset: const Offset(10, 10),
-                            blurRadius: 5,
-                          )
+                            blurRadius: 4,
+                            offset: const Offset(4, 4),
+                          ),
                         ],
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(15),
@@ -104,6 +104,7 @@ class LoginPage extends StatelessWidget {
                         padding: EdgeInsets.symmetric(horizontal: 8),
                         child: TextField(
                           decoration: InputDecoration(
+                            border: InputBorder.none,
                             focusedBorder: InputBorder.none,
                           ),
                         ),
