@@ -136,6 +136,7 @@ class LoginPage extends StatelessWidget {
                         padding: EdgeInsets.symmetric(horizontal: 8),
                         child: TextField(
                           decoration: InputDecoration(
+                            border: InputBorder.none,
                             focusedBorder: InputBorder.none,
                           ),
                         ),
