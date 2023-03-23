@@ -44,7 +44,12 @@ class LoginPage extends StatelessWidget {
                   ElevatedButton(
                     onPressed: () {},
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color.fromARGB(255, 255, 253, 253),
+                      backgroundColor: Colors.white70,
+                      shape: RoundedRectangleBorder(
+                        side: BorderSide.none, // Removendo a borda do botão
+                        borderRadius: BorderRadius.circular(
+                            15), // Adicionando bordas arredondadas
+                      ),
                     ),
                     child: const Text(
                       'Sign In',
