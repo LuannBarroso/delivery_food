@@ -65,9 +65,15 @@ class LoginPage extends StatelessWidget {
                   const SizedBox(width: 16),
                   ElevatedButton(
                     onPressed: () {},
-                    style: const ButtonStyle(
+                    style: ButtonStyle(
                       backgroundColor:
-                          MaterialStatePropertyAll(Colors.transparent),
+                          MaterialStateProperty.all<Color>(Colors.transparent),
+                      elevation: MaterialStateProperty.all<double>(0),
+                      shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                        const RoundedRectangleBorder(
+                          borderRadius: BorderRadius.zero,
+                        ),
+                      ),
                     ),
                     child: const Text(
                       'Sign Up',
