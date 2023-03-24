@@ -65,7 +65,10 @@ class LoginPage extends StatelessWidget {
                   const SizedBox(width: 16),
                   ElevatedButton(
                     onPressed: () {},
-                    style: const ButtonStyle(),
+                    style: const ButtonStyle(
+                      backgroundColor:
+                          MaterialStatePropertyAll(Colors.transparent),
+                    ),
                     child: const Text(
                       'Sign Up',
                       style: TextStyle(
